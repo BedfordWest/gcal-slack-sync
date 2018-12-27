@@ -10,7 +10,9 @@ A simple and messy NodeJS script to sync Google Calendar with Slack presence.
 4) Install the Slack Client package for NodeJS: `npm install @slack/client`
 5) Obtain a Slack refresh token with access privilege to `dnd:write` and `users.profile:write`
 6) Copy the refresh token into the `SLACK_TOKEN` environment variable for your system
-7) Run the app with `node .` in the app directory.
-8) When prompted, grant Google with the access privileges request.
-9) Place the downloaded credentials.json file into the app directory. The app should continue by syncing your Google Calendar events with your Slack presence.
-10) Subsequent runs of the app should correctly sync your Google Calendar with your Slack presence.
+7) Go to https://developers.google.com/calendar/quickstart/nodejs and follow the instructions to obtain a `credentials.json` file.
+8) Copy this `credentials.json` file into your app directory.
+9) Run the app with `node .` in the app directory.
+10) When prompted, grant Google with the access privileges request.
+11) The app should continue by syncing your Google Calendar events with your Slack presence.
+12) Subsequent runs of the app should correctly sync your Google Calendar with your Slack presence.
