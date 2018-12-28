@@ -170,6 +170,7 @@ function listEvents(auth) {
       console.log('No upcoming events found.');
     }
     if(onPTO) {
+	dndBody.num_minutes = 60;
         setDnD();
         setProfileStatus(PTOStatus);
     }
